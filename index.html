@@ -1,0 +1,77 @@
+<DOCTYPE! html>
+
+<html>
+	<head>
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<img class="img-responsive" src="http://placehold.it/300x150" alt="Logo image">
+				</div>
+				<div class="col-md-9 text-right">
+					<h1>Company Name</h1>
+					<h3>Software Company</h3>
+				</div>
+			</div>
+		</div>
+		</br>
+		
+		<div class="container">		
+			<form name="loginForm">
+				<div class="row">
+					<div class="col-md-2">
+						<h4>First Name</h4>
+						<input type="text" name="firstname"/>
+					</div>
+					<div class="col-md-2">
+						<h4>Last Name</h4>
+						<input type="text" name="lastname"/>
+					</div>
+					<div class="col-md-2">
+						<h4>Password</h4>
+						<input type="password" name="password"/>
+					</div>
+				</div>
+				</br>
+				
+				<div class="row">
+					<div class="col-md-2">
+						<h4>Education</h4>
+					</div>
+				</div>
+				
+				<p id="educationList">
+					
+				</p>
+		
+				<div class="row">
+					<div class="col-md-2">
+						<select id="education">
+							  <option value="select">--Select--</option>
+							  <option value="High School">High School</option>
+							  <option value="Undergraduate">Undergraduate</option>
+							  <option value="Graduate">Graduate</option>
+							  <option value="Other">Other</option>
+						</select>
+					</div>
+					<div class="col-md-2">
+						<input class="btn btn-default" type="button" value=" + " onclick="addEducation()"/>
+					</div>
+				</div>
+				</br>
+				
+				<div class="row">
+					<div class="col-md-1">
+						<input class="btn btn-default" type="button" value="Submit" onclick="submitForm()"/>
+					</div>
+				</div>
+			</form>
+			<p id="demo"></p>
+		
+			<script src="js/form.js"></script>
+		</div>
+	</body>
+</html>
