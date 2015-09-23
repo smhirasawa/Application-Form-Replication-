@@ -6,6 +6,7 @@
 	</head>
 	
 	<body>
+		<!--Header-->
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3">
@@ -17,8 +18,33 @@
 				</div>
 			</div>
 		</div>
+		
+		<!--NavBar-->
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="#"><img class="img-resposive" src="http://placehold.it/60x40" alt="navbar logo"></a>
+				</div>
+				<div>
+					<ul class="nav navbar-nav">
+						<li><a href ="#">Home</a></li>
+						<li><a href ="#">About</a></li>
+						<li><a href ="#">Contact</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Profile<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href ="#">Account</a></li>
+								<li><a href ="#">Settings</a></li>
+								<li><a href ="#">Logout</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 		</br>
 		
+		<!--Information Form-->
 		<div class="container">		
 			<form name="loginForm">
 				<div class="row">
@@ -71,7 +97,9 @@
 			</form>
 			<p id="demo"></p>
 		
+			<!--JavaScript Files-->
 			<script src="js/form.js"></script>
+			<script src="bootstrap/js/bootstrap.js"></script>
 		</div>
 	</body>
 </html>
