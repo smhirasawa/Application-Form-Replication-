@@ -28,9 +28,14 @@
 		<nav class="navbar navbar-default">
 			<div class="container">
 				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navBar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
 					<a href="#"><img class="img-resposive" src="http://placehold.it/60x40" alt="navbar logo"></a>
 				</div>
-				<div>
+				<div class="collapse navbar-collapse" id="navBar">
 					<ul class="nav navbar-nav">
 						<li><a href ="#">Home</a></li>
 						<li><a href ="#">About</a></li>
@@ -50,50 +55,64 @@
 		</nav>
 		</br>
 		
-		<!--Information Form-->
+		<!--Personal Info Form-->
+		<div class="container">
+			<h2>Personal Information</h2>
+			<form role="form" name="personalForm">
+				<div class="form-group">
+					<label for="fname">First Name:</label>
+					<input type="text" class="form-control" name="fname" placeholder="Enter First Name">
+				</div>
+				<div class="form-group">
+					<label for="lname">Last Name:</label>
+					<input type="text" class="form-control" name="fname" placeholder="Enter Last Name">
+				</div>
+				<div class="form-group">
+					<label for="pwd">Password:</label>
+					<input type="password" class="form-control" name="pwd" placeholder="Enter password">
+				</div>
+				<div class="form-group">
+					<label for="pwd">Confirm Password:</label>
+					<input type="password" class="form-control" name="confirmPwd" placeholder="Confirm password">
+				</div>
+		  </form>
+		</div>
+		
+		<!--Education Form-->
 		<div class="container">		
-			<form name="loginForm">
+			<h2>Education</h2>
+			<form role="form" name="educationForm">
+		
 				<div class="row">
 					<div class="col-md-2">
-						<h4>First Name</h4>
-						<input type="text" name="firstname"/>
+						<label>School Type</label>
+						<div style="padding-top:5px;">
+							<select id="education">
+								  <option value="select">--Select--</option>
+								  <option value="High School">High School</option>
+								  <option value="Undergraduate">Undergraduate</option>
+								  <option value="Graduate">Graduate</option>
+								  <option value="Other">Other</option>
+							</select>
+						</div>
 					</div>
-					<div class="col-md-2">
-						<h4>Last Name</h4>
-						<input type="text" name="lastname"/>
+					
+					<div class="form-group">
+						<div class="col-xs-3">
+							<label for="schoolName">Enter School Name:</label>
+							<input type="text" class="form-control" name="schoolName">
+						</div>
 					</div>
-					<div class="col-md-2">
-						<h4>Password</h4>
-						<input type="password" name="password"/>
+					
+					<div class="col-md-2" style="padding-top:10px;">
+						<input class="btn btn-default" type="button" value=" + " onclick="addEducation()">
 					</div>
 				</div>
 				</br>
-				
-				<div class="row">
-					<div class="col-md-2">
-						<h4>Education</h4>
-					</div>
-				</div>
 				
 				<p id="educationList">
 					
 				</p>
-		
-				<div class="row">
-					<div class="col-md-2">
-						<select id="education">
-							  <option value="select">--Select--</option>
-							  <option value="High School">High School</option>
-							  <option value="Undergraduate">Undergraduate</option>
-							  <option value="Graduate">Graduate</option>
-							  <option value="Other">Other</option>
-						</select>
-					</div>
-					<div class="col-md-2">
-						<input class="btn btn-default" type="button" value=" + " onclick="addEducation()"/>
-					</div>
-				</div>
-				</br>
 				
 				<div class="row">
 					<div class="col-md-1">
@@ -102,7 +121,6 @@
 				</div>
 			</form>
 			<p id="demo"></p>
-		
 			<!--JavaScript Files-->
 			<script src="js/form.js"></script>
 			

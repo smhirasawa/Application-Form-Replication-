@@ -13,11 +13,17 @@ function addEducation(){
 	
 	if(selected != "select"){
 		var div = document.createElement('div');
+		var schoolName = "nothing";
+		schoolName = document.educationForm.schoolName.value;
+		document.getElementById("name").innerHTML = schoolName;
 		div.id = idNum;
 		var newEducation = "\
 		<div class=\"row\">\
-			<div class=\"col-md-2\"\
+			<div class=\"col-md-2\">\
 				<p>"+selected+"</p>\
+			</div>\
+			<div class=\"col-md-3\">\
+				<p>"+schoolName+"</p>\
 			</div>\
 			<div class=\"col-md-2\">\
 					<input class=\"btn btn-default\" type=\"button\" value=\"Delete\" onclick=\"deleteEducation("+idNum+")\"/>\
