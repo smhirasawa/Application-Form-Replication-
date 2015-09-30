@@ -15,7 +15,6 @@ function addEducation(){
 		var div = document.createElement('div');
 		var schoolName = "nothing";
 		schoolName = document.educationForm.schoolName.value;
-		document.getElementById("name").innerHTML = schoolName;
 		div.id = idNum;
 		var newEducation = "\
 		<div class=\"row\">\
